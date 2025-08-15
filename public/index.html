@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindTool.ai - 한국어 삼행시 생성기</title>
+    <meta name="description" content="AI가 만드는 재미있는 한국어 삼행시! 이름이나 단어를 입력하면 창의적인 삼행시를 즉시 생성해드립니다. 모임과 친구들과의 시간을 더욱 즐겁게 만들어보세요.">
+    <meta name="keywords" content="삼행시, 한국어, AI, 시, 재미, 이름, 단어, 생성기">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="KindTool.ai - 한국어 삼행시 생성기">
+    <meta property="og:description" content="AI가 만드는 재미있는 한국어 삼행시! 이름이나 단어를 입력하면 창의적인 삼행시를 즉시 생성해드립니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kindtool.ai">
+    <meta property="og:image" content="https://kindtool.ai/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="KindTool.ai - 한국어 삼행시 생성기">
+    <meta name="twitter:description" content="AI가 만드는 재미있는 한국어 삼행시! 이름이나 단어를 입력하면 창의적인 삼행시를 즉시 생성해드립니다.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div id="root">
+        <!-- React app will be rendered here -->
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+            <div style="text-align: center;">
+                <h1 style="color: #1f2937; margin-bottom: 1rem;">KindTool.ai</h1>
+                <p style="color: #6b7280;">한국어 삼행시 생성기를 로딩 중입니다...</p>
+                <div style="margin-top: 2rem;">
+                    <div style="display: inline-block; width: 2rem; height: 2rem; border: 3px solid #f3f4f6; border-top: 3px solid #3b82f6; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+        }
+    </style>
+
+    <!-- The React app will replace this loading screen -->
+    <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

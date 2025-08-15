@@ -1,0 +1,28 @@
+{
+  "name": "kindtool-firebase",
+  "version": "1.0.0",
+  "description": "Firebase deployment package for KindTool.ai Korean Acrostic Poem Generator",
+  "scripts": {
+    "build": "npm run build:client && npm run build:functions",
+    "build:client": "vite build --config vite.firebase.config.ts",
+    "build:functions": "cd functions && npm install && npm run build",
+    "dev": "firebase emulators:start",
+    "deploy": "npm run build && firebase deploy",
+    "serve": "firebase serve --only hosting",
+    "functions:serve": "firebase emulators:start --only functions",
+    "functions:deploy": "firebase deploy --only functions",
+    "hosting:deploy": "npm run build:client && firebase deploy --only hosting"
+  },
+  "dependencies": {
+    "firebase": "^10.9.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "^13.1.0",
+    "vite": "^5.1.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": ["firebase", "korean", "acrostic", "poem", "ai", "react"],
+  "author": "KindTool.ai",
+  "license": "MIT"
+}
